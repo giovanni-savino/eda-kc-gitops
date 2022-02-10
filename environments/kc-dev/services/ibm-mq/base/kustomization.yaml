@@ -1,5 +1,6 @@
 
 resources:
   - ./config-map.yaml
-  - ./qmgr.yaml
+  #- ./qmgr.yaml
   - ./service.yaml
+  - ./route.yaml

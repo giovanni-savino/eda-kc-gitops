@@ -2,7 +2,7 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: ibmmq
+  name: kc-mq-ibm-mq
 spec:
   selector:
     app: ibmmq
