@@ -27,12 +27,12 @@ spec:
         envFrom:
         - configMapRef:
             name: kc-order-ui-cm
-        image: quay.io/kbilquees/eda-kc-order-mq-ui-main_web
+        image: gsavino/ordersampleui:1.0
         # quay.io/ibmcase/eda-kc-order-mq-ui
         imagePullPolicy: Always
 
         ports:
-        - containerPort: 80
+        - containerPort: 8080
           name: http
           protocol: TCP
       serviceAccount: kc-sa
