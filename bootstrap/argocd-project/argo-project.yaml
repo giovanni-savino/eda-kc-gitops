@@ -8,7 +8,7 @@ metadata:
 spec:
   description: The ArgoCD project to manage the KC solution deployment
   sourceRepos: 
-  - https://github.com/ibm-cloud-architecture/eda-kc-gitops.git
+  - https://github.com/giovanni-savino/eda-kc-gitops.git
   # Only permit applications to deploy to the following namespace in the same cluster
   destinations:
   - namespace: kc-dev

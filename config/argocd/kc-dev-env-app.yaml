@@ -11,7 +11,7 @@ spec:
   project: kc-mq
   source:
     path: environments/kc-dev/env/overlays
-    repoURL: https://github.com/ibm-cloud-architecture/eda-kc-gitops.git
+    repoURL: https://github.com/giovanni-savino/eda-kc-gitops.git
   syncPolicy:
     automated:
       prune: true

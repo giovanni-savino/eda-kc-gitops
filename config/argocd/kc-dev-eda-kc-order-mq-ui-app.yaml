@@ -13,7 +13,7 @@ spec:
   project: kc-mq
   source:
     path: environments/kc-dev/apps/app-eda-kc-order-mq-ui/overlays
-    repoURL: https://github.com/ibm-cloud-architecture/eda-kc-gitops.git
+    repoURL: https://github.com/giovanni-savino/eda-kc-gitops.git
   syncPolicy:
     automated:
       prune: true
