@@ -2,7 +2,7 @@ resources:
 - argo-app.yaml
 # - cicd-app.yaml
 - kc-dev-env-app.yaml
-- kc-dev-services-app.yaml
+# - kc-dev-services-app.yaml
 - kc-dev-eda-kc-order-cmd-mq-app.yaml
 - kc-dev-eda-kc-order-mq-ui-app.yaml
 - kc-dev-eda-kc-voyage-ms-mq-app.yaml
