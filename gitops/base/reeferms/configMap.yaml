@@ -4,7 +4,7 @@ kind: ConfigMap
 metadata:
   name: reeferms-config
 data:
-  REEZER_REQUEST_QUEUE: DEV.FREEZER_REQUESTS
+  FREEZER_REQUEST_QUEUE: DEV.FREEZER_REQUESTS
   FREEZER_RESPONSE_QUEUE: DEV.FREEZER_RESPONSES
   MQ_URL: "failover:(amqp://ibmmq:5672?jms.prefetchPolicy.queuePrefetch=1)"
   VOYAGE_REQUEST_QUEUE: DEV.VOYAGE_REQUEST
