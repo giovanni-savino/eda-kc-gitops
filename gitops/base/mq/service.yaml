@@ -5,7 +5,7 @@ metadata:
   name: ibmmq
 spec:
   selector:
-    run: ibmmq
+    app: ibmmq
   ports:
     - name: mq
       protocol: TCP
