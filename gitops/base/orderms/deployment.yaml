@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: orderms
-        image: quay.io/ibmcase/eda-kc-order-ms-mq
+        image: quay.io/ibmcase/eda-kc-order-cmd-mq:1.0-distroless
         ports:
         - containerPort: 8080
         envFrom:
