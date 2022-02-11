@@ -5,7 +5,7 @@ metadata:
   name: kc-mq-ibm-mq
 spec:
   selector:
-    app: ibmmq
+    app.kubernetes.io/name: kc-mq-ibm-mq
   ports:
     - name: mq
       protocol: TCP

@@ -3,20 +3,21 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: ibmmq
-  labels:
-    name: ibmmq
+labels:
+    app.kubernetes.io/instance: kc-mq-ibm-mq
+    app.kubernetes.io/name: kc-mq-ibm-mq
 spec:
   replicas: 1
   selector:
     matchLabels:
-      name: ibmmq
+      name: kc-mq-ibm-mq
   template:
     metadata:
       labels:
-        name: ibmmq
+        name: kc-mq-ibm-mq
     spec:
       containers:
-      - name: ibmmq
+      - name: kc-mq-ibm-mq
         image: quay.io/ibmcase/ibm-mqadvanced-server-dev:9.2.4.0-amd64
         ports:
         - containerPort: 1414
