@@ -5,7 +5,7 @@ metadata:
   name: voyagems
 spec:
   selector:
-    run: voyagems
+    app: voyagems
   ports:
     - name: http
       protocol: TCP
