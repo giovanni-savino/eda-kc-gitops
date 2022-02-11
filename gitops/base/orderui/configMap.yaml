@@ -1,0 +1,11 @@
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: order-ui-cm
+data:
+  API_HOST_ORDERMS: 'http://orderms'
+  API_HOST_VOYAGESMS: 'http://voyagems'
+  API_PORT_ORDERMS: '8080'
+  API_PORT_VOYAGESMS: '8080'
+  APP_VERSION: 0.0.1

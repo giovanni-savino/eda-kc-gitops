@@ -1,0 +1,25 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: reeferms
+  labels:
+    name: reeferms
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      name: reeferms
+  template:
+    metadata:
+      labels:
+        name: reeferms
+    spec:
+      containers:
+      - name: reeferms
+        image: quay.io/ibmcase/eda-kc-reefer-mq:1.0-distroless
+        ports:
+        - containerPort: 8083
+        envFrom:
+        - configMapRef:
+            name: reeferms-config

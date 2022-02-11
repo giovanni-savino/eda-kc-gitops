@@ -1,0 +1,10 @@
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: mq-config
+data:
+  LICENSE: accept
+  MQ_APP_PASSWORD: passw0rd
+  MQ_ENABLE_METRICS: "true"
+  MQ_QMGR_NAME: QM1

@@ -1,0 +1,25 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: orderms
+  labels:
+    name: orderms
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      name: orderms
+  template:
+    metadata:
+      labels:
+        name: orderms
+    spec:
+      containers:
+      - name: orderms
+        image: quay.io/ibmcase/eda-kc-order-cmd-mq:1.0-distroless
+        ports:
+        - containerPort: 8080
+        envFrom:
+        - configMapRef:
+            name: orderms-config

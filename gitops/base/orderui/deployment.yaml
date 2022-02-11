@@ -1,0 +1,27 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: order-ui
+  labels:
+    name: order-ui
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      name: order-ui
+  template:
+    metadata:
+      labels:
+        name: order-ui
+    spec:
+      containers:
+        - name: order-ui
+          image: 'gsavino/ordersampleui:1.0'
+          ports:
+            - name: http
+              containerPort: 8080
+              protocol: TCP
+          envFrom:
+            - configMapRef:
+                name: order-ui-cm
