@@ -55,4 +55,4 @@ services:
      stdin_open: true
      tty: true
      ports:
-          - "8089:80"
+          - "8089:8080"
