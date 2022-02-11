@@ -11,7 +11,11 @@ spec:
   host: ""
   path: /
   port:
-    targetPort: 9443
+    targetPort: https
   to:
     kind: Service
     name: kc-mq-ibm-mq
+  tls:
+    termination: passthrough
+    insecureEdgeTerminationPolicy: None
+  wildcardPolicy: None
