@@ -3,8 +3,8 @@ kind: Kustomization
 metadata:
   name: eda-kn-mq
 
-commonLabels:
-  app: eda-kn-mq
+# commonLabels:
+#   app: eda-kn-mq
 
 resources:
 - base/mq/
