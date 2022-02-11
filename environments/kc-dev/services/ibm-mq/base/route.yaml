@@ -6,6 +6,7 @@ metadata:
   labels:
     app.kubernetes.io/name: kc-mq-ibm-mq
   name: kc-mq-ibm-mq
+  namepspace: kc-dev
 spec:
   host: ""
   path: /

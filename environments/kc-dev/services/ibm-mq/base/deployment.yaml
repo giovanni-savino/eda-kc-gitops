@@ -2,8 +2,10 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: ibmmq
-labels:
+  name: kc-mq-ibm-mq
+  annotations:
+  namespace: kc-dev
+  labels:
     app.kubernetes.io/instance: kc-mq-ibm-mq
     app.kubernetes.io/name: kc-mq-ibm-mq
 spec:
