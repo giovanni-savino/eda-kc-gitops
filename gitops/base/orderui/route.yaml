@@ -1,0 +1,14 @@
+---
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  name: orderui-route
+spec:
+  host: ""
+  port:
+    targetPort: http
+  to:
+    kind: Service
+    name: order-ui
+  wildcardPolicy: None
+  
