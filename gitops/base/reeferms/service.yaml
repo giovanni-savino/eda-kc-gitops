@@ -5,7 +5,7 @@ metadata:
   name: reeferms
 spec:
   selector:
-    app: reeferms
+    run: reeferms
   ports:
     - name: http
       protocol: TCP

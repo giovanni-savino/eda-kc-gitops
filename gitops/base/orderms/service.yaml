@@ -5,7 +5,7 @@ metadata:
   name: orderms
 spec:
   selector:
-    app: orderms
+    run: orderms
   ports:
     - name: http
       protocol: TCP
