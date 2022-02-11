@@ -21,7 +21,7 @@ spec:
   wildcardPolicy: None
   
 ---
-piVersion: route.openshift.io/v1
+apiVersion: route.openshift.io/v1
 kind: Route
 metadata:
   annotations:
