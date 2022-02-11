@@ -9,7 +9,6 @@ metadata:
   namespace: kc-dev
 spec:
   host: ""
-  path: /
   port:
     targetPort: https
   to:
