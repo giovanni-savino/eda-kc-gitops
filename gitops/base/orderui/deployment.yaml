@@ -3,17 +3,15 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: order-ui
-  labels:
-    name: order-ui
 spec:
   replicas: 1
   selector:
     matchLabels:
-      name: order-ui
+      run: order-ui
   template:
     metadata:
       labels:
-        name: order-ui
+        run: order-ui
     spec:
       containers:
         - name: order-ui

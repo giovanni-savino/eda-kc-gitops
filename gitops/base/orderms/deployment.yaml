@@ -3,17 +3,15 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: orderms
-  labels:
-    name: orderms
 spec:
   replicas: 1
   selector:
     matchLabels:
-      name: orderms
+      run: orderms
   template:
     metadata:
       labels:
-        name: orderms
+        run: orderms
     spec:
       containers:
       - name: orderms

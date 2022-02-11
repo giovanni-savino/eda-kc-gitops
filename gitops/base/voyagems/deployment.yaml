@@ -3,17 +3,15 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: voyagems
-  labels:
-    name: voyagems
 spec:
   replicas: 1
   selector:
     matchLabels:
-      name: voyagems
+      run: voyagems
   template:
     metadata:
       labels:
-        name: voyagems
+        run: voyagems
     spec:
       containers:
       - name: voyagems

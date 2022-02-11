@@ -3,17 +3,15 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: reeferms
-  labels:
-    name: reeferms
 spec:
   replicas: 1
   selector:
     matchLabels:
-      name: reeferms
+      run: reeferms
   template:
     metadata:
       labels:
-        name: reeferms
+        run: reeferms
     spec:
       containers:
       - name: reeferms
