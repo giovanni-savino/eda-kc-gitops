@@ -11,7 +11,7 @@ spec:
   host: ""
   path: /
   port:
-    targetPort: 8443
+    targetPort: 9443
   to:
     kind: Service
     name: kc-mq-ibm-mq

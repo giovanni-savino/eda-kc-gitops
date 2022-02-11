@@ -12,11 +12,11 @@ spec:
   replicas: 1
   selector:
     matchLabels:
-      name: kc-mq-ibm-mq
+      app.kubernetes.io/name: kc-mq-ibm-mq
   template:
     metadata:
       labels:
-        name: kc-mq-ibm-mq
+        app.kubernetes.io/name: kc-mq-ibm-mq
     spec:
       containers:
       - name: kc-mq-ibm-mq
