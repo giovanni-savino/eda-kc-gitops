@@ -5,7 +5,7 @@ metadata:
   name: order-ui
 spec:
   selector:
-    run: order-ui
+    app: order-ui
   ports:
     - name: http
       protocol: TCP

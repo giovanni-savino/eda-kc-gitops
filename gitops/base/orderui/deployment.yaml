@@ -2,7 +2,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: order-ui
+  name: order-ui-dp
 spec:
   replicas: 1
   selector:
