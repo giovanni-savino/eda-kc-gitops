@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: reeferms
-        image: quay.io/ibmcase/eda-kc-reefer-mq:1.0-distroless
+        image: quay.io/ibmcase/eda-kc-freezer-ms-mq
         ports:
         - containerPort: 8083
         envFrom:
