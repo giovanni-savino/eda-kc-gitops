@@ -8,3 +8,11 @@ data:
   MQ_APP_PASSWORD: passw0rd
   MQ_ENABLE_METRICS: "true"
   MQ_QMGR_NAME: QM1
+
+  ---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: mq-mqsc-config
+data:
+  DEFINE QLOCAL('DEV.QUEUE.SAMPLE') REPLACE

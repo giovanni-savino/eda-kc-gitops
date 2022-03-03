@@ -23,3 +23,10 @@ spec:
         envFrom:
         - configMapRef:
             name: mq-config
+        volumeMounts:
+        - name: mq-mqsc-config
+          mountPath: /etc/mqm/example.mqsc
+      volumes:
+        - name: mq-mqsc-config
+          configMap:
+            name: mq-mqsc-config
