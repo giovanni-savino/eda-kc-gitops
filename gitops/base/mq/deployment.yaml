@@ -26,6 +26,7 @@ spec:
         volumeMounts:
         - name: mq-mqsc-config
           mountPath: /etc/mqm/example.mqsc
+          subPath: example.mqsc
       volumes:
         - name: mq-mqsc-config
           configMap:

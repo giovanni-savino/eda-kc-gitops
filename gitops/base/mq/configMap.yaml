@@ -15,4 +15,5 @@ kind: ConfigMap
 metadata:
   name: mq-mqsc-config
 data:
-  DEFINE QLOCAL('DEV.QUEUE.SAMPLE') REPLACE
+  example.mqsc: |
+    DEFINE QLOCAL('DEV.QUEUE.SAMPLE') REPLACE
